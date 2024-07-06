@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Size and OnClick Example</title>
+    <style>
+        .custom-button {
+            width: 200px; /* 初期幅を設定 */
+            height: 75px; /* 初期高さを設定 */
+            font-size: 16px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function changeButtonSize() {
+            var button = document.getElementById("myButton");
+            button.style.width = "400px"; // 幅を変更
+            button.style.height = "200px"; // 高さを変更
+        }
+    </script>
+</head>
+<body>
+    <div id="omikuji">今日の運勢を占ってみましょう</div>
+    <button id="myButton" class="custom-button" onclick="omikujishow()"onclick="changeButtonSize()">おみくじを引く</button>
+    <script src="mission_4-4.js"></script>
+</body>
+</html>
